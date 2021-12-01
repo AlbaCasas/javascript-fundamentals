@@ -15,15 +15,15 @@ John weights 92 kg and is 1.95 m tall.
 § Data 2: Marks weights 95 kg and is 1.88 m tall. 
 John weights 85 kg and is 1.76 m tall. */ 
 
-let massMark = 95;
-let heightMark = 1.88;
-let massJohn = 85;
-let heightJohn = 1.76;
+const massMark = 95;
+const heightMark = 1.88;
+const massJohn = 85;
+const heightJohn = 1.76;
 
-let BMIMark = massMark / heightMark ** 2;
-let BMIJohn = massJohn / heightJohn ** 2;
+const BMIMark = massMark / heightMark ** 2;
+const BMIJohn = massJohn / heightJohn ** 2;
 
-let markHigherBMI = BMIMark > BMIJohn;
+const markHigherBMI = BMIMark > BMIJohn;
 
 console.log(`Mark: weight: ${massMark} height: ${heightMark} BMI: ${BMIMark}`);
 console.log(`John: weight: ${massJohn} height: ${heightJohn} BMI: ${BMIJohn}`);
