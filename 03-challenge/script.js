@@ -9,11 +9,21 @@ Output (Print messages):
 
 const mediaDolphins = (96 + 108 + 89) / 3;
 console.log(`Dolphins average: ${mediaDolphins}`);
-const mediaKoalas = (88 + 91 + 110) / 3;
+const mediaKoalas = (110 + 108 + 89) / 3;
 console.log(`Koalas average: ${mediaKoalas}`);
 
 if (mediaDolphins > mediaKoalas) {
-  console.log("Dolphins has won");
+  console.log("Dolphins has won!");
+} else if (mediaDolphins < 100 && mediaKoalas < 100) {
+  console.log("Both disqualified");
+} else if (mediaKoalas > mediaDolphins) {
+  console.log("Koalas has won!");
 } else {
-  console.log("Koalas has won");
+  if (
+    mediaDolphins === mediaKoalas &&
+    mediaKoalas >= 100 &&
+    mediaDolphins >= 100
+  ) {
+    console.log("Draw!");
+  }
 }
